@@ -16,7 +16,7 @@ newfile=os.path.join(pth, filename + '_2' + extension)
 df = pd.read_excel(file)
 print('columns: ' + str(df.columns.values))
 colpick = input("Select Column: ")
-cols = list(set(df[colpick].values)) 
+cols = list(set(df[colpick].unique())) 
    
 
 
@@ -39,7 +39,7 @@ def sendTosheet(cols):
     print('Thanks for using this program.')
 
 
-print("Your data will split based on these values {} and create {} files or sheets based on next selection. If you are ready to proceed please type 'Y' and hit enter. Hit 'N' to exit".format(', '.join(cols), len(cols)))
+print("Your data will split based on these values {} and create {} files or sheets based on next selection. If you are ready to proceed please type 'Y' and hit enter. Hit 'N' to exit".format(', '.join(str(cols)), len(cols)))
 
 
 
