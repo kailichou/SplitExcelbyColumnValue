@@ -23,7 +23,7 @@ cols = list(set(df[colpick].unique()))
 
 def sendTofile(cols):
     for i in cols:
-        df[df[colpick]==i].to_excel("{}/{}.xlsx".format(pth, i), sheet_name=i, index=False)
+        df[df[colpick]==i].to_excel("{}/{}.xlsx".format(pth, i), sheet_name=str(i), index=False)
     print('\nCompleted')
     print('Thanks for using the program.')
     
