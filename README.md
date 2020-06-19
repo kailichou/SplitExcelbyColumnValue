@@ -1,6 +1,6 @@
 # SplitExcelbyColumnValue
 
-#### A spliting Excel sheet program makes a tedious task easy and crispy. 
+#### An Excel sheet spliting program makes a tedious task easy and crispy. 
 
 **Kudos to @satssehgal**
 
@@ -11,7 +11,6 @@ Satssehgal's YouTube tutorial showed his entire program. However, the source cod
 
 - os
 - shutil
-
 - pandas
 - openpyxl
 - xlrd
